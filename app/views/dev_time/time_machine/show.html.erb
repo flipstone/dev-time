@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>DevTime Time Machine</title>
+    <%= stylesheet_link_tag "dev-time" %>
+  </head>
+  <body>
+    <h1>Welcome to the DevTime Time Machine</h1>
+    <h3>powered by Delorean</h3>
+
+    <div class="time-machine-dashboard">
+      <div class="time-machine-readout">
+        The time is now <%= Time.now.strftime "%H:%M:%S %Y-%m-%d" %>
+      </div>
+
+      <%- if flash[:time_machine_error].present? %>
+        <div class="time-machine-error">
+          <%= flash[:time_machine_error] %>
+        </div>
+      <% end %>
+
+      <%- if flash[:time_machine_message].present? %>
+        <div class="time-machine-message">
+          <%= flash[:time_machine_message] %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="time-machine-controls">
+      <%= form_tag time_machine_travel_path do %>
+        Destination:
+        <%= text_field_tag :destination %>
+        <%= submit_tag "Travel through time!" %>
+      <% end %>
+
+      <%= form_tag time_machine_return_path do %>
+        <%= submit_tag "Go back to the present!" %>
+      <% end %>
+
+      <p class="time-machine-instructions">
+      The time machine understands many ways of talking about time.
+      Both absolute (e.g. November 5, 1999) and
+      relative (e.g. 3 years ago) will work.
+      </p>
+
+      <p class="time-machine-instructions">
+      Note that if your development server checks for timeout (like
+      Unicorn does) you may need to start it with a very long timeout
+      setting (e.g. 1 year) in order to avoid having the worker killed
+      while it is time travelling.
+      </p>
+    </div>
+  </body>
+</html>
