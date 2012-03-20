@@ -15,7 +15,7 @@ Installation
 
 Add dev-item to your `Gemfile`:
 
-  gem 'dev-time'
+    gem 'dev-time'
 
 
 Then run `bundle install` and start your app as normal.
