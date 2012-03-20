@@ -13,7 +13,7 @@ rails &gt;= 3.1
 Installation
 ------------
 
-Add dev-item to your `Gemfile`:
+Add dev-item to your `Gemfile`
 
     gem 'dev-time'
 
