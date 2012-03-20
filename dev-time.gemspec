@@ -8,9 +8,10 @@ Gem::Specification.new do |s|
   s.authors     = ["David Vollbracht"]
   s.email       = ["david@flipstone.com"]
   s.homepage    = ""
-  s.summary     = %q{Gives your rails app the ability to time travel in development mode}
-  s.description = %q{DevTime uses the Delorean gem to add time travel capabilies to your rails application.
-Time travel is only available in development mode.}
+  s.summary     = %q{Give your Rails app the ability to time travel in development mode!}
+  s.description = %q{Ever wish it were last month instead of right now when trying to test
+your Rails app? DevTime uses the Delorean gem to add time travel capabilies
+to your application so you can make it so!}
 
   s.rubyforge_project = "dev-time"
 
