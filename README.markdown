@@ -23,7 +23,7 @@ Then run `bundle install` and start your app as normal.
 Usage
 -----
 
-Go to http://localhost:3000/time-machine and get started time travelling!
+Go to `http://localhost:3000/time-machine` and get started time travelling!
 
 Dev Time also provides a couple of helpers you can add to your layout
 to help you know what time is is while you're travelling. Inserting
