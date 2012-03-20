@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Dev::Time::VERSION
   s.authors     = ["David Vollbracht"]
   s.email       = ["david@flipstone.com"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/flipstone/dev-time"
   s.summary     = %q{Give your Rails app the ability to time travel in development mode!}
   s.description = %q{Ever wish it were last month instead of right now when trying to test
 your Rails app? DevTime uses the Delorean gem to add time travel capabilies
